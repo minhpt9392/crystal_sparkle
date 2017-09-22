@@ -1,0 +1,65 @@
+.myinfobox {
+    display: inline-block;
+    width: 180px;
+    height: 66px;
+    color: #555;
+    background-color: #FFF;
+    box-shadow: none;
+    margin: -1px 0 0 -1px;
+    padding: 8px 3px 6px 9px;
+    border: 1px solid lightgray;
+    vertical-align: middle;
+    text-align: left;
+    position: relative
+}
+.myinfobox > .myinfobox-chart {
+    padding-top: 0;
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 50px;
+    text-align: center
+}
+.myinfobox > .myinfobox-data {
+    display: inline-block;
+    border-width: 0;
+    font-size: 13px;
+    text-align: left;
+    line-height: 21px;
+    min-width: 100px;
+    padding-left: 8px;
+    position: relative;
+    top: 0
+}
+
+.myinfobox > .myinfobox-data > .myinfobox-data-number {
+    display: block;
+    font-size: 22px;
+    margin: 2px 0 4px;
+    position: relative;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .15)
+}
+
+.myinfobox > .myinfobox-data > .myinfobox-text {
+    display: block;
+    font-size: 16px;
+    margin: 2px 0 4px;
+    position: relative;
+    text-shadow: none
+}
+
+.myinfobox-orange2 {
+    color: #F79263;
+    border-color: #F79263
+}
+
+.myinfobox-orange2 > .myinfobox-icon > .ace-icon {
+    background-color: #F79263
+}
+
+.myinfobox-orange2 .myinfobox-dark {
+    background-color: #F79263;
+    border-color: #F79263
+}
+.myinfobox > .myinfobox-chart > .sparkline {
+    font-size: 24px;
+}
