@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class ShopOpeningHour extends Model
 {
-    protected $table='shopopeninghour';
+    protected $table='shop_opening_hours';
     public $timestamps = false;
 
     public static function getCurrentSetting($shopId){
@@ -28,8 +28,8 @@ class ShopOpeningHour extends Model
 
     public static function getListOperation()
     {
-        $list = self::join('shop','shop.id','=','shopopeninghour.shop_id')
-            ->select('shopopeninghour.*','shop.business_name as shopName')
+        $list = self::join('shops','shops.id','=','shop_opening_hours.shop_id')
+            ->select('shop_opening_hours.*','shops.business_name as shopName')
             ->get();
         return $list;
     }
