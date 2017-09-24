@@ -19,9 +19,9 @@ class Room extends Model
     }
 
     public static function getListRoom(){
-        $rooms = DB::table('room')
-            ->join('shop','shop.id','=','room.shop_id')
-            ->select('room.*','shop.business_name as shopName')
+        $rooms = DB::table('rooms')
+            ->join('shops','shops.id','=','rooms.shop_id')
+            ->select('rooms.*','shops.business_name as shopName')
             ->orderby('shopName')
             ->get();
         return $rooms;
@@ -29,7 +29,7 @@ class Room extends Model
 
     public static function getRoomById($id)
     {
-        $room = DB::table('room')
+        $room = DB::table('rooms')
             ->where('id',$id)
             ->first();
         return $room;
