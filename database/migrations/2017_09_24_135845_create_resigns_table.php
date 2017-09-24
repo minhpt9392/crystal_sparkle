@@ -19,6 +19,7 @@ class CreateResignsTable extends Migration
             $table->integer('STAFF_AccID')->nullable();
             $table->dateTime('action_date')->nullable();
             $table->dateTime('submit_date')->nullable();
+            $table->dateTime('permit_cancel_date')->nullable();
             $table->string('reason')->nullable();
             $table->integer('approval_StaffID')->nullable();
             $table->integer('type')->nullable()->comment('1=Resign,2=Fire');;
