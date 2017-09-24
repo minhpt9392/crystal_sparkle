@@ -23,8 +23,10 @@
                 <div class="row">
                     <div class="col-xs-12">
                         @include('backend::layouts.messages')
+                        @if($role->id != 1)
                         <a href="/admin/role/edit/{{$role->id}}" class="btn btn-success">Update</a>
                         <a href="#" class="btn btn-danger delete_role" role_id="{{$role->id}}" role_name="{{$role->display_name}}">Delete</a>
+                        @endif
                         <div class="widget-box">
                             <div class="widget-header widget-header-blue widget-header-flat">
                                 <h4 class="widget-title lighter">Descriptions</h4>
