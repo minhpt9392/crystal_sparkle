@@ -56,7 +56,7 @@
     </li>
 
     <li class="hover">
-        <a href="#" class="dropdown-toggle">
+        <a href="/admin/on-going-promotion/list">
             <i class="menu-icon fa fa-pencil-square-o"></i>
             <span class="menu-text"> On Going Promotion </span>
             <b class="arrow"></b>
@@ -65,7 +65,7 @@
     </li>
 
     <li class="hover">
-        <a href="#" class="dropdown-toggle">
+        <a href="/admin/operating-hours/list">
             <i class="menu-icon fa fa-pencil-square-o"></i>
             <span class="menu-text"> Operating hours </span>
             <b class="arrow"></b>
