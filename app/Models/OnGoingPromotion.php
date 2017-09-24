@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class OnGoingPromotion extends Model
 {
-    protected $table='ongoingpromotion';
+    protected $table='on_going_promotions';
     public $timestamps = false;
 
     public static function createPromotion($noExpenditure, $timePeriod, $freeService, $discounted, $packages, $startDate, $endDate)
