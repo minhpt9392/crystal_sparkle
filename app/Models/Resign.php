@@ -8,11 +8,11 @@ use Illuminate\Support\Facades\DB;
 class Resign extends Model
 {
 //    protected $table='resign';
-//    public $timestamps = false;
+   public $timestamps = false;
 
     public static function addResign($staffId, $type, $actionDate, $permitCancelDate, $reason){
         //$resign = new Resign;
-        DB::table('resign')->insert([
+        DB::table('resigns')->insert([
             'STAFF_AccID' => $staffId,
             'type' => $type,
             'action_date' => $actionDate,
@@ -23,7 +23,7 @@ class Resign extends Model
 
     public static function getListResign()
     {
-        $listResign = DB::table('resign')->get();
+        $listResign = DB::table('resigns')->get();
         return $listResign;
     }
 }

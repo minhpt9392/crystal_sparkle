@@ -30,5 +30,11 @@ class PermissionRoleTableSeeder extends Seeder
             'role_id'       => 1,
         ]);
         $p_role->save();
+
+        $p_role = new \App\PermissionRole([
+            'permission_id' => 4,
+            'role_id'       => 1,
+        ]);
+        $p_role->save();
     }
 }
