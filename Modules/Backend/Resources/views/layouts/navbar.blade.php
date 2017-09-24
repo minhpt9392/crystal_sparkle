@@ -46,14 +46,14 @@
         </a>
     </li>
 
-    <li class="hover">
-        <a href="#" class="dropdown-toggle">
-            <i class="menu-icon fa fa-pencil-square-o"></i>
-            <span class="menu-text"> Staff </span>
-            <b class="arrow"></b>
+    {{--<li class="hover">--}}
+        {{--<a href="#" class="dropdown-toggle">--}}
+            {{--<i class="menu-icon fa fa-pencil-square-o"></i>--}}
+            {{--<span class="menu-text"> Staff </span>--}}
+            {{--<b class="arrow"></b>--}}
             {{--<b class="arrow fa fa-angle-down"></b>--}}
-        </a>
-    </li>
+        {{--</a>--}}
+    {{--</li>--}}
 
     <li class="hover">
         <a href="/admin/on-going-promotion/list">
