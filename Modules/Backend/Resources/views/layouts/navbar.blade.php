@@ -9,7 +9,7 @@
     </li>
 
     <li class="active open hover">
-        <a href="/admin/room/list" class="dropdown-toggle">
+        <a href="/admin/room/list">
             <i class="menu-icon fa fa-list"></i>
             <span class="menu-text">
                 Room
