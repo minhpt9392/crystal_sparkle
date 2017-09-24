@@ -1,6 +1,6 @@
 <ul class="nav nav-list nav-custom-color">
     <li class="hover light-blue">
-        <a href="index.html">
+        <a href="/admin">
             <i class="menu-icon fa fa-home"></i>
             <span class="menu-text"> Home </span>
         </a>
@@ -9,10 +9,10 @@
     </li>
 
     <li class="active open hover">
-        <a href="#" class="dropdown-toggle">
+        <a href="/admin/room/list" class="dropdown-toggle">
             <i class="menu-icon fa fa-desktop"></i>
             <span class="menu-text">
-                UI &amp; Elements
+                Room
             </span>
 
             <b class="arrow"></b>
@@ -20,18 +20,54 @@
     </li>
 
     <li class="hover">
-        <a href="#" class="dropdown-toggle">
+        <a href="/admin/promotion/list" class="dropdown-toggle">
             <i class="menu-icon fa fa-list"></i>
-            <span class="menu-text"> Tables </span>
+            <span class="menu-text"> Promotion </span>
 
             <b class="arrow"></b>
         </a>
     </li>
 
     <li class="hover">
+        <a href="/admin/package" class="dropdown-toggle">
+            <i class="menu-icon fa fa-pencil-square-o"></i>
+            <span class="menu-text"> Package </span>
+            <b class="arrow"></b>
+            {{--<b class="arrow fa fa-angle-down"></b>--}}
+        </a>
+    </li>
+
+    <li class="hover">
+        <a href="/admin/role">
+            <i class="menu-icon fa fa-pencil-square-o"></i>
+            <span class="menu-text"> Role </span>
+            <b class="arrow"></b>
+            {{--<b class="arrow fa fa-angle-down"></b>--}}
+        </a>
+    </li>
+
+    <li class="hover">
         <a href="#" class="dropdown-toggle">
             <i class="menu-icon fa fa-pencil-square-o"></i>
-            <span class="menu-text"> Forms </span>
+            <span class="menu-text"> Staff </span>
+            <b class="arrow"></b>
+            {{--<b class="arrow fa fa-angle-down"></b>--}}
+        </a>
+    </li>
+
+    <li class="hover">
+        <a href="#" class="dropdown-toggle">
+            <i class="menu-icon fa fa-pencil-square-o"></i>
+            <span class="menu-text"> On Going Promotion </span>
+            <b class="arrow"></b>
+            {{--<b class="arrow fa fa-angle-down"></b>--}}
+        </a>
+    </li>
+
+    <li class="hover">
+        <a href="#" class="dropdown-toggle">
+            <i class="menu-icon fa fa-pencil-square-o"></i>
+            <span class="menu-text"> Operating hours </span>
             <b class="arrow"></b>
             {{--<b class="arrow fa fa-angle-down"></b>--}}
         </a>

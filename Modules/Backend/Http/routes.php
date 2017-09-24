@@ -70,7 +70,7 @@ Route::group(['middleware' => 'web', 'prefix' => 'admin', 'namespace' => 'Module
     Route::post('/payment-schemes/set-payment-tri-mounthly', 'PaymentController@setPaymentTriMounthly');
 
     //Roles
-    Route::group(['prefix' => 'role','middleware' => ['role:admin']], function() {
+    Route::group(['prefix' => 'role','middleware' => ['role:global_admin']], function() {
         Route::get('/', ['as' => 'role.index', 'uses' => 'RoleController@index']);
         Route::get('/view/{id}', ['as' => 'role.view', 'uses' => 'RoleController@view']);
         Route::get('/edit/{id}', ['as' => 'role.edit', 'uses' => 'RoleController@edit']);

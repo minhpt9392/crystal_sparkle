@@ -93,19 +93,18 @@
                                                         <td class="text-overflow">{{$role->description}}</td>
                                                         <td>
                                                             <div class="hidden-sm hidden-xs btn-group">
-                                                                @permission('view-role')
-                                                                <a class="btn btn-xs btn-success" href="/admin/role/view/{{$role->id}}" title="Role detail">
-                                                                    <i class="ace-icon fa fa-check bigger-120"></i>
-                                                                </a>
-                                                                @endpermission
+                                                                @if($key != 0)
+                                                                    <a class="btn btn-xs btn-success" href="/admin/role/view/{{$role->id}}" title="Role detail">
+                                                                        <i class="ace-icon fa fa-check bigger-120"></i>
+                                                                    </a>
+                                                                    <a class="btn btn-xs btn-info" href="/admin/role/edit/{{$role->id}}" title="Role edit">
+                                                                        <i class="ace-icon fa fa-pencil bigger-120"></i>
+                                                                    </a>
 
-                                                                <a class="btn btn-xs btn-info" href="/admin/role/edit/{{$role->id}}" title="Role edit">
-                                                                    <i class="ace-icon fa fa-pencil bigger-120"></i>
-                                                                </a>
-
-                                                                <a class="btn btn-xs btn-danger delete_role" href="#" title="Role delete" role_id="{{$role->id}}" role_name="{{$role->display_name}}">
-                                                                    <i class="ace-icon fa fa-trash-o bigger-120"></i>
-                                                                </a>
+                                                                    <a class="btn btn-xs btn-danger delete_role" href="#" title="Role delete" role_id="{{$role->id}}" role_name="{{$role->display_name}}">
+                                                                        <i class="ace-icon fa fa-trash-o bigger-120"></i>
+                                                                    </a>
+                                                                @endif
                                                             </div>
 
                                                             <div class="hidden-md hidden-lg">
