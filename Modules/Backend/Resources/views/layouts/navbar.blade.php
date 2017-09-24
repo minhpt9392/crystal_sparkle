@@ -10,7 +10,7 @@
 
     <li class="active open hover">
         <a href="/admin/room/list" class="dropdown-toggle">
-            <i class="menu-icon fa fa-desktop"></i>
+            <i class="menu-icon fa fa-list"></i>
             <span class="menu-text">
                 Room
             </span>
@@ -20,8 +20,8 @@
     </li>
 
     <li class="hover">
-        <a href="/admin/promotion/list" class="dropdown-toggle">
-            <i class="menu-icon fa fa-list"></i>
+        <a href="/admin/promotion/list">
+            <i class="menu-icon fa fa-gift"></i>
             <span class="menu-text"> Promotion </span>
 
             <b class="arrow"></b>
@@ -29,8 +29,8 @@
     </li>
 
     <li class="hover">
-        <a href="/admin/package" class="dropdown-toggle">
-            <i class="menu-icon fa fa-pencil-square-o"></i>
+        <a href="/admin/package/list-sold">
+            <i class="menu-icon fa fa-ship"></i>
             <span class="menu-text"> Package </span>
             <b class="arrow"></b>
             {{--<b class="arrow fa fa-angle-down"></b>--}}
@@ -39,7 +39,7 @@
 
     <li class="hover">
         <a href="/admin/role">
-            <i class="menu-icon fa fa-pencil-square-o"></i>
+            <i class="menu-icon fa fa-key"></i>
             <span class="menu-text"> Role </span>
             <b class="arrow"></b>
             {{--<b class="arrow fa fa-angle-down"></b>--}}

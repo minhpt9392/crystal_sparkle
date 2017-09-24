@@ -12,10 +12,10 @@ class Staff extends Model
 
     public static function getAllTherapist(){
 
-        $therapist= DB::table('staff')
-            ->where('staff.type','=',2)
-            ->join('shop','shop.id','=','staff.shop_id')
-            ->select('staff.*','shop.business_name as shopName')
+        $therapist= DB::table('staffs')
+            ->where('staffs.type','=',2)
+            ->join('shops','shops.id','=','staffs.shop_id')
+            ->select('staffs.*','shops.business_name as shopName')
             ->get();
         return $therapist;
     }

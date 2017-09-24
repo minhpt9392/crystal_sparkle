@@ -93,10 +93,10 @@
                                                         <td class="text-overflow">{{$role->description}}</td>
                                                         <td>
                                                             <div class="hidden-sm hidden-xs btn-group">
+                                                                <a class="btn btn-xs btn-success" href="/admin/role/view/{{$role->id}}" title="Role detail">
+                                                                    <i class="ace-icon fa fa-eye bigger-120"></i>
+                                                                </a>
                                                                 @if($key != 0)
-                                                                    <a class="btn btn-xs btn-success" href="/admin/role/view/{{$role->id}}" title="Role detail">
-                                                                        <i class="ace-icon fa fa-check bigger-120"></i>
-                                                                    </a>
                                                                     <a class="btn btn-xs btn-info" href="/admin/role/edit/{{$role->id}}" title="Role edit">
                                                                         <i class="ace-icon fa fa-pencil bigger-120"></i>
                                                                     </a>
