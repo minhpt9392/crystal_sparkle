@@ -24,6 +24,7 @@ class CreateBookingsTable extends Migration
             $table->integer('time')->nullable();
             $table->string('time_start')->nullable();
             $table->string('promotion')->nullable();
+            $table->enum('status',['Tentative','Completed','No-show'])->nullable();
             $table->string('create_by')->nullable();
             $table->string('update_by')->nullable();
             $table->timestamps();
