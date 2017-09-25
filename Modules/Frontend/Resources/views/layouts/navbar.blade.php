@@ -1,7 +1,7 @@
 <ul class="nav nav-list nav-custom-color">
     <li class="hover light-blue">
         <a href="/">
-            <i class="menu-icon fa fa-cart-arrow-down"></i>
+            <i class="menu-icon fa fa-home"></i>
             <span class="menu-text"> Shop </span>
         </a>
 

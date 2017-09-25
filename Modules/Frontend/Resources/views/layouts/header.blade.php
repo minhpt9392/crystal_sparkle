@@ -29,12 +29,14 @@
 
             <nav role="navigation" class="navbar-menu pull-right collapse navbar-collapse">
                 <ul class="nav navbar-nav">
+                    @if(\Illuminate\Support\Facades\Auth::user())
                     <li>
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <a href="#">
                             <i class="ace-icon fa fa-user"></i>
-                            Profile
+                            Hello {{\Illuminate\Support\Facades\Auth::user()->name}}
                         </a>
                     </li>
+                    @endif
                     <li class="green dropdown-modal">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <i class="ace-icon fa fa-envelope"></i>
@@ -150,12 +152,21 @@
                             </li>
                         </ul>
                     </li>
+                    @if(\Illuminate\Support\Facades\Auth::user())
                     <li>
-                        <a href="/admin/home/logout">
+                        <a href="/home/logout">
                             <i class="ace-icon fa fa-mail-forward"></i>
                             Logout
                         </a>
                     </li>
+                    @else
+                        <li>
+                            <a href="/login">
+                                <i class="ace-icon fa fa-sign-in"></i>
+                                Login
+                            </a>
+                        </li>
+                    @endif
                 </ul>
 
 
